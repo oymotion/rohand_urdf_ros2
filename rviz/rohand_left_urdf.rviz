@@ -7,7 +7,6 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1
-        - /RobotModel1/Description Topic1
       Splitter Ratio: 0.5
     Tree Height: 707
   - Class: rviz_common/Selection
@@ -59,7 +58,7 @@ Visualization Manager:
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /robot_description
+        Value: /rohand_left/robot_description
       Enabled: true
       Links:
         All Links Enabled: true
@@ -72,12 +71,32 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        ff_distal_link:
+        if_connecting_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ff_proximal_link:
+        if_distal_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        if_proximal_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        if_slider_abpart_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        if_slider_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        lf_connecting_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -92,12 +111,42 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        lf_slider_abpart_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        lf_slider_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mf_connecting_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         mf_distal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mf_proximal_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mf_slider_abpart_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mf_slider_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rf_connecting_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -112,12 +161,22 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        th_distal_link:
+        rf_slider_abpart_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        th_immediate_link:
+        rf_slider_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        th_connecting_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        th_distal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -127,18 +186,28 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        th_root_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        th_slider_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Mass Properties:
         Inertia: false
         Mass: false
       Name: RobotModel
-      TF Prefix: ""
+      TF Prefix: rohand_left
       Update Interval: 0
       Value: true
       Visual Enabled: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_link
+    Fixed Frame: rohand_left/base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -181,25 +250,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.6940572261810303
+      Distance: 0.47914451360702515
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.08347101509571075
-        Y: -0.06863882392644882
-        Z: 0.00130102364346385
+        X: -0.054269157350063324
+        Y: 0.0749979242682457
+        Z: 0.0022707851603627205
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.060203611850738525
+      Pitch: 0.2097967118024826
       Target Frame: base_link
       Value: Orbit (rviz)
-      Yaw: 1.8704124689102173
+      Yaw: 1.7453974485397339
     Saved: ~
 Window Geometry:
   Displays:
@@ -217,5 +286,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1838
-  X: 82
-  Y: 32
+  X: 264
+  Y: 275

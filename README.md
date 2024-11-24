@@ -1,42 +1,45 @@
-# ROHAND URDF BASED ON ROS2
+# ROHAND URDF PACKAGE FOR ROS2
 
-rohand urdf file
+rohand urdf package
 
-## STEPS
+## 1.Clone
 
-### PREPARE
-
-1.Create a ROS2 workspace in ubuntu:
-
-```SHELL
-mkdir -p ~/ros2_ws/src
+```BASH
+cd ~
+mkdir -p ros2_ws/src
+cd ros2_ws/src
+git clone ssh://git@github.com/oymotion/rohand_urdf_ros2
 ```
 
-2.Copy the rohand_urdf folder to ~/ros2_ws/src:
+## 2.Compile
 
-```SHELL
-cp -r /(your path to rohand_urdf folder) ~/ros2_ws/src
-```
-
-3.Enter the workspace and compile:
-
-```SHELL
-cd ~/ros2_ws/src
+```BASH
 colcon build
 source install/setup.bash
 ```
 
-### RUN
+## 4.Node rohand_urdf
 
-Launch 'launch.py':
+| Topic             | Description                                                               |
+| ----------------- | ------------------------------------------------------------------------- |
+| "if_slider_joint" | slider for index finger, control index finger by changing it's position   |
+| "mf_slider_joint" | slider for middle finger, control middle finger by changing it's position |
+| "rf_slider_joint" | slider for ring finger, control ring finger by changing it's position     |
+| "lf_slider_joint" | slider for little finger, control little finger by changing it's position |
+| "th_slider_joint" | slider for thumb, control thumb by changing it's position                 |
+| "th_root_joint"   | slider for thumb root, control thumb root by changing it's position       |
+
+## 5.RUN
+
+Launch 'launch.py' file:
 Left hand：
 
-```SHELL
+```BASH
 ros2 launch rohand_urdf left_rviz2.launch.py 
 ```
 
 Right hand：
 
-```SHELL
+```BASH
 ros2 launch rohand_urdf right_rviz2.launch.py
 ```
