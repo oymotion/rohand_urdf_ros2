@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/base_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/base_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_slider_link.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_slider_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_slider_abpart_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_slider_abpart_link.STL" />
       </geometry>
       <material
         name="">
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_slider_abpart_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_slider_abpart_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -177,7 +177,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -191,7 +191,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -230,7 +230,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -244,7 +244,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_distal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -283,7 +283,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_connecting_link.STL" />
       </geometry>
       <material
         name="">
@@ -297,7 +297,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/if_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/if_connecting_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -336,7 +336,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_slider_link.STL" />
       </geometry>
       <material
         name="">
@@ -350,7 +350,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_slider_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -394,7 +394,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_slider_abpart_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_slider_abpart_link.STL" />
       </geometry>
       <material
         name="">
@@ -408,7 +408,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_slider_abpart_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_slider_abpart_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -447,7 +447,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -461,7 +461,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -500,7 +500,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -514,7 +514,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_distal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -553,7 +553,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_connecting_link.STL" />
       </geometry>
       <material
         name="">
@@ -567,7 +567,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/mf_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/mf_connecting_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -606,7 +606,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_slider_link.STL" />
       </geometry>
       <material
         name="">
@@ -620,7 +620,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_slider_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -664,7 +664,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_slider_abpart_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_slider_abpart_link.STL" />
       </geometry>
       <material
         name="">
@@ -678,7 +678,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_slider_abpart_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_slider_abpart_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -717,7 +717,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -731,7 +731,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -770,7 +770,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -784,7 +784,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_distal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -823,7 +823,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_connecting_link.STL" />
       </geometry>
       <material
         name="">
@@ -837,7 +837,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/rf_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/rf_connecting_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -876,7 +876,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_slider_link.STL" />
       </geometry>
       <material
         name="">
@@ -890,7 +890,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_slider_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -934,7 +934,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_slider_abpart_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_slider_abpart_link.STL" />
       </geometry>
       <material
         name="">
@@ -948,7 +948,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_slider_abpart_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_slider_abpart_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -987,7 +987,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -1001,7 +1001,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1040,7 +1040,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -1054,7 +1054,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_distal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1093,7 +1093,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_connecting_link.STL" />
       </geometry>
       <material
         name="">
@@ -1107,7 +1107,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/lf_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/lf_connecting_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1146,7 +1146,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_root_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_root_link.STL" />
       </geometry>
       <material
         name="">
@@ -1160,7 +1160,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_root_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_root_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1204,7 +1204,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -1218,7 +1218,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_proximal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1257,7 +1257,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_slider_link.STL" />
       </geometry>
       <material
         name="">
@@ -1271,7 +1271,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_slider_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_slider_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1315,7 +1315,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_connecting_link.STL" />
       </geometry>
       <material
         name="">
@@ -1329,7 +1329,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_connecting_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_connecting_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1368,7 +1368,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -1382,7 +1382,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rohand_urdf/meshes_l/th_distal_link.STL" />
+          filename="package://rohand_urdf_ros2/meshes_l/th_distal_link.STL" />
       </geometry>
     </collision>
   </link>

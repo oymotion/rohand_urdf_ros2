@@ -3,7 +3,7 @@ import os
 
 from setuptools import find_packages, setup
 
-package_name = 'rohand_urdf'
+package_name = 'rohand_urdf_ros2'
 
 setup(
     name=package_name,

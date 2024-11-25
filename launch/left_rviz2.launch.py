@@ -6,7 +6,7 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
-    package_name = "rohand_urdf"
+    package_name = "rohand_urdf_ros2"
     urdf_name = "rohand_left.urdf"
     rviz_name = "rohand_left_urdf.rviz"
 
@@ -23,7 +23,7 @@ def generate_launch_description():
         namespace="rohand_left",
         parameters=[{
             "frame_prefix": "rohand_left/",
-            }],
+        }],
         remappings=[("/joint_states", "/rohand_left/joint_states")],
         arguments=[urdf_model_path]
     )
@@ -37,7 +37,7 @@ def generate_launch_description():
     )
 
     finger_sync_node = Node(
-        package="rohand_urdf",
+        package=package_name,
         executable="rohand_urdf_node",
         name="rohand_left_urdf_node",
         namespace="rohand_left",
