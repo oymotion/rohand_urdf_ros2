@@ -23,15 +23,15 @@ def generate_launch_description():
         namespace="rohand_right",
         parameters=[{
             "frame_prefix": "rohand_right/",
-        }],
+            }],
         remappings=[("/joint_states", "/rohand_right/joint_states")],
         arguments=[urdf_model_path]
     )
 
     joint_state_publisher_node = Node(
-        package="joint_state_publisher_gui",
-        executable="joint_state_publisher_gui",
-        name="right_joint_state_publisher_gui",
+        package=package_name,
+        executable="rohand_joint_state_gui",
+        name="rohand_right_joint_state_gui",
         remappings=[("/joint_states", "/rohand_right/rohand_right_urdf_node/joint_states")],
         arguments=[urdf_model_path]
     )

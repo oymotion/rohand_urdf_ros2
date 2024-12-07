@@ -29,6 +29,7 @@ setup(
     entry_points={
         'console_scripts': [
             'rohand_urdf_node = scripts.rohand_urdf:main',
+            'rohand_joint_state_gui = scripts.rohand_joint_state_gui:main',
         ],
     },
 )

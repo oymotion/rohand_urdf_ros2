@@ -23,15 +23,16 @@ def generate_launch_description():
         namespace="rohand_left",
         parameters=[{
             "frame_prefix": "rohand_left/",
-        }],
+            }],
         remappings=[("/joint_states", "/rohand_left/joint_states")],
         arguments=[urdf_model_path]
     )
 
     joint_state_publisher_node = Node(
-        package="joint_state_publisher_gui",
-        executable="joint_state_publisher_gui",
-        name="left_joint_state_publisher_gui",
+        package=package_name,
+        executable="rohand_joint_state_gui",
+        name="rohand_left_joint_state_gui",
+        # namespace="rohand_left",
         remappings=[("/joint_states", "/rohand_left/rohand_left_urdf_node/joint_states")],
         arguments=[urdf_model_path]
     )
@@ -50,6 +51,7 @@ def generate_launch_description():
         executable="rviz2",
         name="rohand_left_rviz2",
         output="screen",
+        namespace="rohand_left",
         arguments=["-d", rviz_path]
     )
 
