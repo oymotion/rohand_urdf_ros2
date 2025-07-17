@@ -7,3 +7,6 @@ log
 # Ignore everything in src except a .gitkeep file
 src/*
 !src/.gitkeep
+
+# Ignore Python bytecode cache directories
+__pycache__/
