@@ -43,3 +43,11 @@ Right hand：
 ```BASH
 ros2 launch rohand_urdf_ros2 right_rviz2.launch.py
 ```
+
+## 5.FAQs
+
+When the model of the rohand in the program is lost,please run the command below (if humble):  
+
+```BASH
+sudo apt install ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui
+```
