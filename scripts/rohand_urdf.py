@@ -26,6 +26,16 @@ JOINTS_NAME = [
     ['th_root_link']
 ]
 
+def apply_prefix_to_joint_names(names, prefix=''):
+    if not prefix:
+        return list(names)
+
+    prefix = prefix.strip('_')
+    if not prefix:
+        return list(names)
+
+    return [f'{prefix}_{name}' for name in names]
+
 class ROHandURDFNode(Node):
 
     def __init__(self):
@@ -44,9 +54,9 @@ class ROHandURDFNode(Node):
             10
         )
 
-    def cal_joint_angle(self, finger_id, position, msg):
+    def cal_joint_angle(self, finger_id, position, msg, prefix=''):
             joint_angle = HAND_FingerPosToAngle(finger_id, position)
-            msg.name.extend(JOINTS_NAME[finger_id])
+            msg.name.extend(apply_prefix_to_joint_names(JOINTS_NAME[finger_id], prefix))
 
             if(finger_id == THUMB_ID):
                 msg.position.extend([joint_angle[0], position, joint_angle[1], joint_angle[2]])
@@ -66,29 +76,47 @@ class ROHandURDFNode(Node):
 
         for i, name in enumerate(msg.name):
           
-            if name == 'if_slider_link':
+            if name == 'l_if_slider_link':
                 position = msg.position[i]
-                self.cal_joint_angle(INDEX_FINGER_ID, position, rotation_msg)
+                self.cal_joint_angle(INDEX_FINGER_ID, position, rotation_msg, prefix='l')
+            if name == 'r_if_slider_link':
+                position = msg.position[i]
+                self.cal_joint_angle(INDEX_FINGER_ID, position, rotation_msg, prefix='r')
                 
-            if name == 'mf_slider_link':
+            if name == 'l_mf_slider_link':
                 position = msg.position[i]
-                self.cal_joint_angle(MIDDLE_FINGER_ID, position, rotation_msg)
+                self.cal_joint_angle(MIDDLE_FINGER_ID, position, rotation_msg, prefix='l')
+            if name == 'r_mf_slider_link':
+                position = msg.position[i]
+                self.cal_joint_angle(MIDDLE_FINGER_ID, position, rotation_msg, prefix='r')
      
-            if name == 'rf_slider_link':
+            if name == 'l_rf_slider_link':
                 position = msg.position[i]
-                self.cal_joint_angle(RING_FINGER_ID, position, rotation_msg)
+                self.cal_joint_angle(RING_FINGER_ID, position, rotation_msg, prefix='l')
+            if name == 'r_rf_slider_link':
+                position = msg.position[i]
+                self.cal_joint_angle(RING_FINGER_ID, position, rotation_msg, prefix='r')
 
-            if name == 'lf_slider_link':
+            if name == 'l_lf_slider_link':
                 position = msg.position[i]
-                self.cal_joint_angle(LITTLE_FINGER_ID, position, rotation_msg)
+                self.cal_joint_angle(LITTLE_FINGER_ID, position, rotation_msg, prefix='l')
+            if name == 'r_lf_slider_link':
+                position = msg.position[i]
+                self.cal_joint_angle(LITTLE_FINGER_ID, position, rotation_msg, prefix='r')
 
-            if name == 'th_slider_link':
+            if name == 'l_th_slider_link':
                 position = msg.position[i]
-                self.cal_joint_angle(THUMB_ID, position, rotation_msg)
+                self.cal_joint_angle(THUMB_ID, position, rotation_msg, prefix='l')
+            if name == 'r_th_slider_link':
+                position = msg.position[i]
+                self.cal_joint_angle(THUMB_ID, position, rotation_msg, prefix='r')
 
-            if name == 'th_root_link':
+            if name == 'l_th_root_link':
                 position = msg.position[i]
-                self.cal_joint_angle(THUMB_ROOT_ID, position, rotation_msg)
+                self.cal_joint_angle(THUMB_ROOT_ID, position, rotation_msg, prefix='l')
+            if name == 'r_th_root_link':
+                position = msg.position[i]
+                self.cal_joint_angle(THUMB_ROOT_ID, position, rotation_msg, prefix='r')
 
         # publish message
         self.joint_states_publisher.publish(rotation_msg)

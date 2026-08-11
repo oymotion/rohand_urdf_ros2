@@ -5,7 +5,7 @@
 <robot
   name="rohand_right">
   <link
-    name="base_link">
+    name="r_base_link">
     <inertial>
       <origin
         xyz="-0.0534374129596824 -0.00157154809251104 0.0032467575274062"
@@ -45,7 +45,7 @@
     </collision>
   </link>
   <link
-    name="if_slider_link">
+    name="r_if_slider_link">
     <inertial>
       <origin
         xyz="-0.0138317508854737 -0.00115448052302192 1.02779733464993E-06"
@@ -85,15 +85,15 @@
     </collision>
   </link>
   <joint
-    name="if_slider_link"
+    name="r_if_slider_link"
     type="prismatic">
     <origin
       xyz="-0.074396 -0.026655 -0.0059032"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="if_slider_link" />
+      link="r_if_slider_link" />
     <axis
       xyz="0.99655 0.083049 0" />
     <limit
@@ -103,7 +103,7 @@
       velocity="0" />
   </joint>
   <link
-    name="if_slider_abpart_link">
+    name="r_if_slider_abpart_link">
     <inertial>
       <origin
         xyz="-0.00954720518211122 -0.00427267015401807 -0.000544594201914366"
@@ -143,20 +143,20 @@
     </collision>
   </link>
   <joint
-    name="if_slider_abpart_link"
+    name="r_if_slider_abpart_link"
     type="continuous">
     <origin
       xyz="-0.029189 0.0010654 0.00030518"
       rpy="0 0 0" />
     <parent
-      link="if_slider_link" />
+      link="r_if_slider_link" />
     <child
-      link="if_slider_abpart_link" />
+      link="r_if_slider_abpart_link" />
     <axis
       xyz="-0.082734 0.99276 0.087135" />
   </joint>
   <link
-    name="if_proximal_link">
+    name="r_if_proximal_link">
     <inertial>
       <origin
         xyz="-0.016911951986149 -0.00765749366613764 -0.00334236834850994"
@@ -196,20 +196,20 @@
     </collision>
   </link>
   <joint
-    name="if_proximal_link"
+    name="r_if_proximal_link"
     type="continuous">
     <origin
       xyz="-0.11324 -0.024137 0.0032314"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="if_proximal_link" />
+      link="r_if_proximal_link" />
     <axis
       xyz="-0.082428 0.99278 0.087177" />
   </joint>
   <link
-    name="if_distal_link">
+    name="r_if_distal_link">
     <inertial>
       <origin
         xyz="-0.0201374868799976 -0.00765839764328939 -0.00662950783512292"
@@ -249,20 +249,20 @@
     </collision>
   </link>
   <joint
-    name="if_distal_link"
+    name="r_if_distal_link"
     type="continuous">
     <origin
       xyz="-0.035776 -0.0028401 -0.0014841"
       rpy="0 0 0" />
     <parent
-      link="if_proximal_link" />
+      link="r_if_proximal_link" />
     <child
-      link="if_distal_link" />
+      link="r_if_distal_link" />
     <axis
       xyz="-0.082428 0.99278 0.087177" />
   </joint>
   <link
-    name="if_connecting_link">
+    name="r_if_connecting_link">
     <inertial>
       <origin
         xyz="-0.0149214142555827 -0.00339461470143052 -0.00756951243385832"
@@ -302,20 +302,20 @@
     </collision>
   </link>
   <joint
-    name="if_connecting_link"
+    name="r_if_connecting_link"
     type="continuous">
     <origin
       xyz="-0.12029 -0.028806 0.0072922"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="if_connecting_link" />
+      link="r_if_connecting_link" />
     <axis
       xyz="-0.082428 0.99278 0.087177" />
   </joint>
   <link
-    name="mf_slider_link">
+    name="r_mf_slider_link">
     <inertial>
       <origin
         xyz="-0.0138786110407517 -0.000185270392211319 -7.69158771327105E-08"
@@ -355,15 +355,15 @@
     </collision>
   </link>
   <joint
-    name="mf_slider_link"
+    name="r_mf_slider_link"
     type="prismatic">
     <origin
       xyz="-0.076974 -0.010077 -0.0016353"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="mf_slider_link" />
+      link="r_mf_slider_link" />
     <axis
       xyz="0.99991 0.013228 0.00010039" />
     <limit
@@ -373,7 +373,7 @@
       velocity="0" />
   </joint>
   <link
-    name="mf_slider_abpart_link">
+    name="r_mf_slider_abpart_link">
     <inertial>
       <origin
         xyz="-0.0098119455834705 -0.00362935245878584 -0.000504858603029756"
@@ -413,20 +413,20 @@
     </collision>
   </link>
   <joint
-    name="mf_slider_abpart_link"
+    name="r_mf_slider_abpart_link"
     type="continuous">
     <origin
       xyz="-0.029044 0.0031153 0"
       rpy="0 0 0" />
     <parent
-      link="mf_slider_link" />
+      link="r_mf_slider_link" />
     <child
-      link="mf_slider_abpart_link" />
+      link="r_mf_slider_abpart_link" />
     <axis
       xyz="-0.013228 0.99991 7.2594E-05" />
   </joint>
   <link
-    name="mf_proximal_link">
+    name="r_mf_proximal_link">
     <inertial>
       <origin
         xyz="-0.0197978588062098 -0.00676309331424427 -0.00446755065405406"
@@ -466,20 +466,20 @@
     </collision>
   </link>
   <joint
-    name="mf_proximal_link"
+    name="r_mf_proximal_link"
     type="continuous">
     <origin
       xyz="-0.11605 -0.0040932 0.0069659"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="mf_proximal_link" />
+      link="r_mf_proximal_link" />
     <axis
       xyz="-0.013244 0.99991 -4.2699E-05" />
   </joint>
   <link
-    name="mf_distal_link">
+    name="r_mf_distal_link">
     <inertial>
       <origin
         xyz="-0.0205799567083225 -0.00679450784333847 -0.00619598626408838"
@@ -519,20 +519,20 @@
     </collision>
   </link>
   <joint
-    name="mf_distal_link"
+    name="r_mf_distal_link"
     type="continuous">
     <origin
       xyz="-0.040851 -0.00054126 -0.0035364"
       rpy="0 0 0" />
     <parent
-      link="mf_proximal_link" />
+      link="r_mf_proximal_link" />
     <child
-      link="mf_distal_link" />
+      link="r_mf_distal_link" />
     <axis
       xyz="-0.013244 0.99991 -2.1055E-05" />
   </joint>
   <link
-    name="mf_connecting_link">
+    name="r_mf_connecting_link">
     <inertial>
       <origin
         xyz="-0.0172404027176054 -0.00302882403489448 -0.00839495079986684"
@@ -572,20 +572,20 @@
     </collision>
   </link>
   <joint
-    name="mf_connecting_link"
+    name="r_mf_connecting_link"
     type="continuous">
     <origin
       xyz="-0.12342 -0.0078912 0.011366"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="mf_connecting_link" />
+      link="r_mf_connecting_link" />
     <axis
       xyz="-0.013244 0.99991 -2.1054E-05" />
   </joint>
   <link
-    name="rf_slider_link">
+    name="r_rf_slider_link">
     <inertial>
       <origin
         xyz="-0.0138577276275272 0.000783291982999354 -2.57947158771588E-09"
@@ -625,15 +625,15 @@
     </collision>
   </link>
   <joint
-    name="rf_slider_link"
+    name="r_rf_slider_link"
     type="prismatic">
     <origin
       xyz="-0.074498 0.0072492 -0.0023801"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="rf_slider_link" />
+      link="r_rf_slider_link" />
     <axis
       xyz="0.9984 -0.056554 9.5082E-05" />
     <limit
@@ -643,7 +643,7 @@
       velocity="0" />
   </joint>
   <link
-    name="rf_slider_abpart_link">
+    name="r_rf_slider_abpart_link">
     <inertial>
       <origin
         xyz="-0.0100460782718657 -0.00293580717799607 -0.000398409844149738"
@@ -683,20 +683,20 @@
     </collision>
   </link>
   <joint
-    name="rf_slider_abpart_link"
+    name="r_rf_slider_abpart_link"
     type="continuous">
     <origin
       xyz="-0.028756 0.0051336 0"
       rpy="0 0 0" />
     <parent
-      link="rf_slider_link" />
+      link="r_rf_slider_link" />
     <child
-      link="rf_slider_abpart_link" />
+      link="r_rf_slider_abpart_link" />
     <axis
       xyz="0.056554 0.9984 7.942E-05" />
   </joint>
   <link
-    name="rf_proximal_link">
+    name="r_rf_proximal_link">
     <inertial>
       <origin
         xyz="-0.0177310287909376 -0.00550519929476113 -0.00333587081746279"
@@ -736,20 +736,20 @@
     </collision>
   </link>
   <joint
-    name="rf_proximal_link"
+    name="r_rf_proximal_link"
     type="continuous">
     <origin
       xyz="-0.11287 0.015935 0.0062161"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="rf_proximal_link" />
+      link="r_rf_proximal_link" />
     <axis
       xyz="0.05658 0.9984 -2.102E-05" />
   </joint>
   <link
-    name="rf_distal_link">
+    name="r_rf_distal_link">
     <inertial>
       <origin
         xyz="-0.0205452704454659 -0.00536749629258281 -0.00756097673363692"
@@ -789,20 +789,20 @@
     </collision>
   </link>
   <joint
-    name="rf_distal_link"
+    name="r_rf_distal_link"
     type="continuous">
     <origin
       xyz="-0.035766 0.0020268 -0.0026198"
       rpy="0 0 0" />
     <parent
-      link="rf_proximal_link" />
+      link="r_rf_proximal_link" />
     <child
-      link="rf_distal_link" />
+      link="r_rf_distal_link" />
     <axis
       xyz="0.05658 0.9984 -2.102E-05" />
   </joint>
   <link
-    name="rf_connecting_link">
+    name="r_rf_connecting_link">
     <inertial>
       <origin
         xyz="-0.0149581978586362 -0.00195701448922151 -0.00799324332753841"
@@ -842,20 +842,20 @@
     </collision>
   </link>
   <joint
-    name="rf_connecting_link"
+    name="r_rf_connecting_link"
     type="continuous">
     <origin
       xyz="-0.1204851022382 0.0126604995038233 0.0106153804877178"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="rf_connecting_link" />
+      link="r_rf_connecting_link" />
     <axis
       xyz="0.0565797489260885 0.99839808271532 -2.10198201110756E-05" />
   </joint>
   <link
-    name="lf_slider_link">
+    name="r_lf_slider_link">
     <inertial>
       <origin
         xyz="-0.0137830050652566 0.00163673819958291 3.10002635612108E-07"
@@ -895,15 +895,15 @@
     </collision>
   </link>
   <joint
-    name="lf_slider_link"
+    name="r_lf_slider_link"
     type="prismatic">
     <origin
       xyz="-0.0708466334619896 0.0241824111749996 -0.00489967270216645"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="lf_slider_link" />
+      link="r_lf_slider_link" />
     <axis
       xyz="0.993009723934899 -0.118032543523823 8.27044911595336E-05" />
     <limit
@@ -913,7 +913,7 @@
       velocity="0" />
   </joint>
   <link
-    name="lf_slider_abpart_link">
+    name="r_lf_slider_abpart_link">
     <inertial>
       <origin
         xyz="-0.0102063555652567 -0.00234259650590587 -0.000209525841910842"
@@ -953,20 +953,20 @@
     </collision>
   </link>
   <joint
-    name="lf_slider_abpart_link"
+    name="r_lf_slider_abpart_link"
     type="continuous">
     <origin
       xyz="-0.0283858043783233 0.00688449840682251 -0.000306788289491815"
       rpy="0 0 0" />
     <parent
-      link="lf_slider_link" />
+      link="r_lf_slider_link" />
     <child
-      link="lf_slider_abpart_link" />
+      link="r_lf_slider_abpart_link" />
     <axis
       xyz="0.117590610595967 0.989230669602698 -0.0871500465694956" />
   </joint>
   <link
-    name="lf_proximal_link">
+    name="r_lf_proximal_link">
     <inertial>
       <origin
         xyz="-0.0162288997665586 -0.00489295515461147 -0.00285461884567003"
@@ -1006,20 +1006,20 @@
     </collision>
   </link>
   <joint
-    name="lf_proximal_link"
+    name="r_lf_proximal_link"
     type="continuous">
     <origin
       xyz="-0.10871130258864 0.0359583660197833 0.00309824490260681"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="lf_proximal_link" />
+      link="r_lf_proximal_link" />
     <axis
       xyz="0.117591058209323 0.989234457465869 -0.0871064359930968" />
   </joint>
   <link
-    name="lf_distal_link">
+    name="r_lf_distal_link">
     <inertial>
       <origin
         xyz="-0.0131613846630599 -0.00544871200568296 -0.00463526283326208"
@@ -1059,20 +1059,20 @@
     </collision>
   </link>
   <joint
-    name="lf_distal_link"
+    name="r_lf_distal_link"
     type="continuous">
     <origin
       xyz="-0.031562 0.0034532 -0.003392"
       rpy="0 0 0" />
     <parent
-      link="lf_proximal_link" />
+      link="r_lf_proximal_link" />
     <child
-      link="lf_distal_link" />
+      link="r_lf_distal_link" />
     <axis
       xyz="0.11759 0.98923 -0.087106" />
   </joint>
   <link
-    name="lf_connecting_link">
+    name="r_lf_connecting_link">
     <inertial>
       <origin
         xyz="-0.0129208949539236 -0.00198480160598055 -0.00783823800520824"
@@ -1112,20 +1112,20 @@
     </collision>
   </link>
   <joint
-    name="lf_connecting_link"
+    name="r_lf_connecting_link"
     type="continuous">
     <origin
       xyz="-0.11647 0.033555 0.0078033"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="lf_connecting_link" />
+      link="r_lf_connecting_link" />
     <axis
       xyz="0.11759 0.98924 -0.087085" />
   </joint>
   <link
-    name="th_root_link">
+    name="r_th_root_link">
     <inertial>
       <origin
         xyz="-0.0182056024312271 -0.00620278411274924 -0.00602504863372063"
@@ -1165,15 +1165,15 @@
     </collision>
   </link>
   <joint
-    name="th_root_link"
+    name="r_th_root_link"
     type="revolute">
     <origin
       xyz="-0.024656 -0.019554 -0.018266"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="th_root_link" />
+      link="r_th_root_link" />
     <axis
       xyz="0.97616 0.01293 0.21667" />
     <limit
@@ -1183,7 +1183,7 @@
       velocity="0" />
   </joint>
   <link
-    name="th_proximal_link">
+    name="r_th_proximal_link">
     <inertial>
       <origin
         xyz="-0.0184116092810015 -0.0115354100517607 0.00417628792862241"
@@ -1223,20 +1223,20 @@
     </collision>
   </link>
   <joint
-    name="th_proximal_link"
+    name="r_th_proximal_link"
     type="continuous">
     <origin
       xyz="-0.025097 -0.021667 -0.015581"
       rpy="0 0 0" />
     <parent
-      link="th_root_link" />
+      link="r_th_root_link" />
     <child
-      link="th_proximal_link" />
+      link="r_th_proximal_link" />
     <axis
       xyz="-0.21699 -0.032029 0.97565" />
   </joint>
   <link
-    name="th_slider_link">
+    name="r_th_slider_link">
     <inertial>
       <origin
         xyz="-0.00851609590265527 -0.00542248522665952 -0.00171626270578038"
@@ -1276,15 +1276,15 @@
     </collision>
   </link>
   <joint
-    name="th_slider_link"
+    name="r_th_slider_link"
     type="prismatic">
     <origin
       xyz="-0.0053401 -0.0053494 0.0068801"
       rpy="0 0 0" />
     <parent
-      link="th_proximal_link" />
+      link="r_th_proximal_link" />
     <child
-      link="th_slider_link" />
+      link="r_th_slider_link" />
     <axis
       xyz="-0.76198 -0.63028 -0.14877" />
     <limit
@@ -1294,7 +1294,7 @@
       velocity="0" />
   </joint>
   <link
-    name="th_connecting_link">
+    name="r_th_connecting_link">
     <inertial>
       <origin
         xyz="-0.00136684006934208 -0.00145247600958444 -0.00439754221886702"
@@ -1334,20 +1334,20 @@
     </collision>
   </link>
   <joint
-    name="th_connecting_link"
+    name="r_th_connecting_link"
     type="continuous">
     <origin
       xyz="-0.026144 -0.020984 -0.0010258"
       rpy="0 0 0" />
     <parent
-      link="th_slider_link" />
+      link="r_th_slider_link" />
     <child
-      link="th_connecting_link" />
+      link="r_th_connecting_link" />
     <axis
       xyz="-0.21699 0.032029 0.97565" />
   </joint>
   <link
-    name="th_distal_link">
+    name="r_th_distal_link">
     <inertial>
       <origin
         xyz="-0.000439994899924894 -0.0101522919044099 -0.0069088261128312"
@@ -1387,15 +1387,15 @@
     </collision>
   </link>
   <joint
-    name="th_distal_link"
+    name="r_th_distal_link"
     type="continuous">
     <origin
       xyz="-0.049076 -0.023254 0.004868"
       rpy="0 0 0" />
     <parent
-      link="th_proximal_link" />
+      link="r_th_proximal_link" />
     <child
-      link="th_distal_link" />
+      link="r_th_distal_link" />
     <axis
       xyz="-0.21698 0.032029 0.97565" />
   </joint>

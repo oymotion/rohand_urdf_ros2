@@ -1,1 +1,16 @@
-controller_joint_names: ['', 'if_slider_link', 'if_slider_abpart_link', 'if_proximal_link', 'if_distal_link', 'if_connecting_link', 'mf_slider_link', 'mf_slider_abpart_link', 'mf_proximal_link', 'mf_distal_link', 'mf_connecting_link', 'rf_slider_link', 'rf_slider_abpart_link', 'rf_proximal_link', 'rf_distal_link', 'rf_connecting_link', 'lf_slider_link', 'lf_slider_abpart_link', 'lf_proximal_link', 'lf_distal_link', 'lf_connecting_link', 'th_root_link', 'th_proximal_link', 'th_slider_link', 'th_connecting_link', 'th_distal_link', ]
+controller_joint_names: ['', 'l_if_slider_link', 'l_if_slider_abpart_link', 'l_if_proximal_link', 
+'l_if_distal_link', 'l_if_connecting_link', 'l_mf_slider_link', 'l_mf_slider_abpart_link', 
+'l_mf_proximal_link', 'l_mf_distal_link', 'l_mf_connecting_link', 'l_rf_slider_link', 
+'l_rf_slider_abpart_link', 'l_rf_proximal_link', 'l_rf_distal_link', 'l_rf_connecting_link', 
+'l_lf_slider_link', 'l_lf_slider_abpart_link', 'l_lf_proximal_link', 'l_lf_distal_link', 
+'l_lf_connecting_link', 'l_th_root_link', 'l_th_proximal_link', 'l_th_slider_link', 
+'l_th_connecting_link', 'l_th_distal_link', ]
+
+
+controller_joint_names: ['', 'r_if_slider_link', 'r_if_slider_abpart_link', 'r_if_proximal_link', 
+'r_if_distal_link', 'r_if_connecting_link', 'r_mf_slider_link', 'r_mf_slider_abpart_link', 
+'r_mf_proximal_link', 'r_mf_distal_link', 'r_mf_connecting_link', 'r_rf_slider_link', 
+'r_rf_slider_abpart_link', 'r_rf_proximal_link', 'r_rf_distal_link', 'r_rf_connecting_link', 
+'r_lf_slider_link', 'r_lf_slider_abpart_link', 'r_lf_proximal_link', 'r_lf_distal_link', 
+'r_lf_connecting_link', 'r_th_root_link', 'r_th_proximal_link', 'r_th_slider_link', 
+'r_th_connecting_link', 'r_th_distal_link', ]

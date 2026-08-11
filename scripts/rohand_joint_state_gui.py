@@ -75,15 +75,18 @@ MIN_WIDTH = SLIDER_WIDTH + DEFAULT_CHILD_MARGIN * 4 + DEFAULT_WINDOW_MARGIN * 2
 MIN_HEIGHT = DEFAULT_BTN_HEIGHT * 2 + DEFAULT_WINDOW_MARGIN * 2 + DEFAULT_CHILD_MARGIN * 2
 
 
-# ROHand main slider name list
-ROHAND_SLIDER_LIST = [
+# ROHand main slider name list.
+# The URDF may use both unprefixed names (legacy) and left/right prefixed names
+# such as l_if_slider_link / r_if_slider_link, so match by suffix instead of
+# requiring an exact full-name match.
+ROHAND_SLIDER_SUFFIX_LIST = (
     'if_slider_link',
     'mf_slider_link',
     'rf_slider_link',
     'lf_slider_link',
     'th_slider_link',
     'th_root_link'
-]
+)
 
 
 class Slider(QWidget):
@@ -200,10 +203,10 @@ class JointStatePublisherGui(QMainWindow):
         for name in self.jsp.joint_list:
             if name not in self.jsp.free_joints:
                 continue
-            
-            if name not in ROHAND_SLIDER_LIST:
+
+            if not any(name.endswith(suffix) for suffix in ROHAND_SLIDER_SUFFIX_LIST):
                 continue
-            
+
             joint = self.jsp.free_joints[name]
 
             if joint['min'] == joint['max']:

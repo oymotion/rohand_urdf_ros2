@@ -66,132 +66,132 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
+        l_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        if_connecting_link:
+        l_if_connecting_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        if_distal_link:
+        l_if_distal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        if_proximal_link:
+        l_if_proximal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        if_slider_abpart_link:
+        l_if_slider_abpart_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        if_slider_link:
+        l_if_slider_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        lf_connecting_link:
+        l_lf_connecting_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        lf_distal_link:
+        l_lf_distal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        lf_proximal_link:
+        l_lf_proximal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        lf_slider_abpart_link:
+        l_lf_slider_abpart_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        lf_slider_link:
+        l_lf_slider_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        mf_connecting_link:
+        l_mf_connecting_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        mf_distal_link:
+        l_mf_distal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        mf_proximal_link:
+        l_mf_proximal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        mf_slider_abpart_link:
+        l_mf_slider_abpart_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        mf_slider_link:
+        l_mf_slider_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rf_connecting_link:
+        l_rf_connecting_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rf_distal_link:
+        l_rf_distal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rf_proximal_link:
+        l_rf_proximal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rf_slider_abpart_link:
+        l_rf_slider_abpart_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rf_slider_link:
+        l_rf_slider_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        th_connecting_link:
+        l_th_connecting_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        th_distal_link:
+        l_th_distal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        th_proximal_link:
+        l_th_proximal_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        th_root_link:
+        l_th_root_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        th_slider_link:
+        l_th_slider_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -207,7 +207,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: rohand_left/base_link
+    Fixed Frame: rohand_left/l_base_link
     Frame Rate: 30
   Name: root
   Tools:
