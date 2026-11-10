@@ -5,20 +5,20 @@
 <robot
   name="rohand_right">
   <link
-    name="base_link">
+    name="r_base_link">
     <inertial>
       <origin
         xyz="-0.0534374129596824 -0.00157154809251104 0.0032467575274062"
         rpy="0 0 0" />
       <mass
-        value="0.0941614898718946" />
+        value="0.37127" />
       <inertia
-        ixx="4.1962895621209E-05"
-        ixy="-3.95936210501525E-07"
-        ixz="3.71581889924585E-06"
-        iyy="6.1906439028121E-05"
-        iyz="-7.5091963461847E-07"
-        izz="8.90989074913989E-05" />
+        ixx="1.654557960E-04"
+        ixy="-1.561139666E-06"
+        ixz="1.465112845E-05"
+        iyy="2.440913334E-04"
+        iyz="-2.960806303E-06"
+        izz="3.513087084E-04" />
     </inertial>
     <visual>
       <origin
@@ -45,20 +45,20 @@
     </collision>
   </link>
   <link
-    name="if_slider_link">
+    name="r_if_slider_link">
     <inertial>
       <origin
         xyz="-0.0138317508854737 -0.00115448052302192 1.02779733464993E-06"
         rpy="0 0 0" />
       <mass
-        value="0.000489138281878773" />
+        value="0.0032" />
       <inertia
-        ixx="4.60375865761165E-09"
-        ixy="-2.8127148800347E-09"
-        ixz="-3.80386613632835E-12"
-        iyy="3.82335085784227E-08"
-        iyz="-7.1416734141464E-11"
-        izz="3.92716908725489E-08" />
+        ixx="3.011833E-08"
+        ixy="-1.840111E-08"
+        ixz="-2.488534E-11"
+        iyy="2.501281E-07"
+        iyz="-4.672167E-10"
+        izz="2.569200E-07" />
     </inertial>
     <visual>
       <origin
@@ -85,15 +85,15 @@
     </collision>
   </link>
   <joint
-    name="if_slider_link"
+    name="r_if_slider_link"
     type="prismatic">
     <origin
       xyz="-0.074396 -0.026655 -0.0059032"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="if_slider_link" />
+      link="r_if_slider_link" />
     <axis
       xyz="0.99655 0.083049 0" />
     <limit
@@ -103,20 +103,20 @@
       velocity="0" />
   </joint>
   <link
-    name="if_slider_abpart_link">
+    name="r_if_slider_abpart_link">
     <inertial>
       <origin
         xyz="-0.00954720518211122 -0.00427267015401807 -0.000544594201914366"
         rpy="0 0 0" />
       <mass
-        value="0.000526636346253179" />
+        value="0.00174" />
       <inertia
-        ixx="2.02100021410092E-09"
-        ixy="-2.54226845281041E-10"
-        ixz="-6.59734936904708E-10"
-        iyy="5.75584791299005E-09"
-        iyz="-1.16850382620202E-10"
-        izz="6.47148213147093E-09" />
+        ixx="6.677360E-09"
+        ixy="-8.399624E-10"
+        ixz="-2.179756E-09"
+        iyy="1.901725E-08"
+        iyz="-3.860722E-10"
+        izz="2.138170E-08" />
     </inertial>
     <visual>
       <origin
@@ -143,33 +143,33 @@
     </collision>
   </link>
   <joint
-    name="if_slider_abpart_link"
+    name="r_if_slider_abpart_link"
     type="continuous">
     <origin
       xyz="-0.029189 0.0010654 0.00030518"
       rpy="0 0 0" />
     <parent
-      link="if_slider_link" />
+      link="r_if_slider_link" />
     <child
-      link="if_slider_abpart_link" />
+      link="r_if_slider_abpart_link" />
     <axis
       xyz="-0.082734 0.99276 0.087135" />
   </joint>
   <link
-    name="if_proximal_link">
+    name="r_if_proximal_link">
     <inertial>
       <origin
         xyz="-0.016911951986149 -0.00765749366613764 -0.00334236834850994"
         rpy="0 0 0" />
       <mass
-        value="0.00154952958352476" />
+        value="0.00969" />
       <inertia
-        ixx="6.20200913201911E-08"
-        ixy="-7.88931806956546E-09"
-        ixz="2.14332181974192E-09"
-        iyy="1.54230936622336E-07"
-        iyz="-1.10636494913782E-09"
-        izz="1.69485646305645E-07" />
+        ixx="3.878433E-07"
+        ixy="-4.933594E-08"
+        ixz="1.340329E-08"
+        iyy="9.644848E-07"
+        iyz="-6.918665E-09"
+        izz="1.059880E-06" />
     </inertial>
     <visual>
       <origin
@@ -196,33 +196,33 @@
     </collision>
   </link>
   <joint
-    name="if_proximal_link"
+    name="r_if_proximal_link"
     type="continuous">
     <origin
       xyz="-0.11324 -0.024137 0.0032314"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="if_proximal_link" />
+      link="r_if_proximal_link" />
     <axis
       xyz="-0.082428 0.99278 0.087177" />
   </joint>
   <link
-    name="if_distal_link">
+    name="r_if_distal_link">
     <inertial>
       <origin
         xyz="-0.0201374868799976 -0.00765839764328939 -0.00662950783512292"
         rpy="0 0 0" />
       <mass
-        value="0.00486631616894411" />
+        value="0.01345" />
       <inertia
-        ixx="1.06037458594174E-07"
-        ixy="-2.80052670107197E-08"
-        ixz="-1.10754286705661E-07"
-        iyy="5.59829063970866E-07"
-        iyz="-8.01484559546708E-09"
-        izz="5.48253746727419E-07" />
+        ixx="2.930767E-07"
+        ixy="-7.740369E-08"
+        ixz="-3.061135E-07"
+        iyy="1.547310E-06"
+        iyz="-2.215221E-08"
+        izz="1.515317E-06" />
     </inertial>
     <visual>
       <origin
@@ -249,33 +249,33 @@
     </collision>
   </link>
   <joint
-    name="if_distal_link"
+    name="r_if_distal_link"
     type="continuous">
     <origin
       xyz="-0.035776 -0.0028401 -0.0014841"
       rpy="0 0 0" />
     <parent
-      link="if_proximal_link" />
+      link="r_if_proximal_link" />
     <child
-      link="if_distal_link" />
+      link="r_if_distal_link" />
     <axis
       xyz="-0.082428 0.99278 0.087177" />
   </joint>
   <link
-    name="if_connecting_link">
+    name="r_if_connecting_link">
     <inertial>
       <origin
         xyz="-0.0149214142555827 -0.00339461470143052 -0.00756951243385832"
         rpy="0 0 0" />
       <mass
-        value="0.000197689248381643" />
+        value="0.0012" />
       <inertia
-        ixx="4.07222521241257E-09"
-        ixy="-1.11279905101146E-09"
-        ixz="-9.07365678556378E-09"
-        iyy="2.70144151560738E-08"
-        iyz="-4.02636120037544E-10"
-        izz="2.30773508713418E-08" />
+        ixx="2.471895E-08"
+        ixy="-6.754838E-09"
+        ixz="-5.507830E-08"
+        iyy="1.639811E-07"
+        iyz="-2.444055E-09"
+        izz="1.400826E-07" />
     </inertial>
     <visual>
       <origin
@@ -302,33 +302,33 @@
     </collision>
   </link>
   <joint
-    name="if_connecting_link"
+    name="r_if_connecting_link"
     type="continuous">
     <origin
       xyz="-0.12029 -0.028806 0.0072922"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="if_connecting_link" />
+      link="r_if_connecting_link" />
     <axis
       xyz="-0.082428 0.99278 0.087177" />
   </joint>
   <link
-    name="mf_slider_link">
+    name="r_mf_slider_link">
     <inertial>
       <origin
         xyz="-0.0138786110407517 -0.000185270392211319 -7.69158771327105E-08"
         rpy="0 0 0" />
       <mass
-        value="0.000489138286069735" />
+        value="0.0032" />
       <inertia
-        ixx="4.37587749533903E-09"
-        ixy="-4.42411170419709E-10"
-        ixz="-1.36586897440314E-11"
-        iyy="3.84552026805131E-08"
-        iyz="-1.78840748392823E-13"
-        izz="3.92778850218071E-08" />
+        ixx="2.8627503E-08"
+        ixy="-2.8943057E-09"
+        ixz="-8.9356749E-11"
+        iyy="2.5157844E-07"
+        iyz="-1.1699971E-12"
+        izz="2.5696053E-07" />
     </inertial>
     <visual>
       <origin
@@ -355,15 +355,15 @@
     </collision>
   </link>
   <joint
-    name="mf_slider_link"
+    name="r_mf_slider_link"
     type="prismatic">
     <origin
       xyz="-0.076974 -0.010077 -0.0016353"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="mf_slider_link" />
+      link="r_mf_slider_link" />
     <axis
       xyz="0.99991 0.013228 0.00010039" />
     <limit
@@ -373,20 +373,20 @@
       velocity="0" />
   </joint>
   <link
-    name="mf_slider_abpart_link">
+    name="r_mf_slider_abpart_link">
     <inertial>
       <origin
         xyz="-0.0098119455834705 -0.00362935245878584 -0.000504858603029756"
         rpy="0 0 0" />
       <mass
-        value="0.000526636368526203" />
+        value="0.00174" />
       <inertia
-        ixx="2.04436010906919E-09"
-        ixy="-4.91500227589239E-11"
-        ixz="-7.8831220122798E-10"
-        iyy="5.7661259675915E-09"
-        iyz="-1.04922947060781E-11"
-        izz="6.43784527640786E-09" />
+        ixx="6.7545402E-09"
+        ixy="-1.6239108E-10"
+        ixz="-2.6045737E-09"
+        iyy="1.9051208E-08"
+        iyz="-3.4666411E-11"
+        izz="2.1270560E-08" />
     </inertial>
     <visual>
       <origin
@@ -413,33 +413,33 @@
     </collision>
   </link>
   <joint
-    name="mf_slider_abpart_link"
+    name="r_mf_slider_abpart_link"
     type="continuous">
     <origin
       xyz="-0.029044 0.0031153 0"
       rpy="0 0 0" />
     <parent
-      link="mf_slider_link" />
+      link="r_mf_slider_link" />
     <child
-      link="mf_slider_abpart_link" />
+      link="r_mf_slider_abpart_link" />
     <axis
       xyz="-0.013228 0.99991 7.2594E-05" />
   </joint>
   <link
-    name="mf_proximal_link">
+    name="r_mf_proximal_link">
     <inertial>
       <origin
         xyz="-0.0197978588062098 -0.00676309331424427 -0.00446755065405406"
         rpy="0 0 0" />
       <mass
-        value="0.00189501857338832" />
+        value="0.00969" />
       <inertia
-        ixx="7.78041708071735E-08"
-        ixy="-2.0667592450232E-09"
-        ixz="-1.00293189957718E-08"
-        iyy="2.34038237089644E-07"
-        iyz="-1.31948795498825E-10"
-        izz="2.46195986184317E-07" />
+        ixx="3.9784434E-07"
+        ixy="-1.0568180E-09"
+        ixz="-5.1283983E-08"
+        iyy="1.1967326E-06"
+        iyz="-6.7470780E-11"
+        izz="1.2589001E-06" />
     </inertial>
     <visual>
       <origin
@@ -466,33 +466,33 @@
     </collision>
   </link>
   <joint
-    name="mf_proximal_link"
+    name="r_mf_proximal_link"
     type="continuous">
     <origin
       xyz="-0.11605 -0.0040932 0.0069659"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="mf_proximal_link" />
+      link="r_mf_proximal_link" />
     <axis
       xyz="-0.013244 0.99991 -4.2699E-05" />
   </joint>
   <link
-    name="mf_distal_link">
+    name="r_mf_distal_link">
     <inertial>
       <origin
         xyz="-0.0205799567083225 -0.00679450784333847 -0.00619598626408838"
         rpy="0 0 0" />
       <mass
-        value="0.00486610881870854" />
+        value="0.01527" />
       <inertia
-        ixx="1.05820356063162E-07"
-        ixy="-5.96217069992573E-09"
-        ixz="-1.13841963470745E-07"
-        iyy="5.61305496694097E-07"
-        iyz="-1.48710666865769E-09"
-        izz="5.46868992272727E-07" />
+        ixx="3.3206756E-07"
+        ixy="-1.8709476E-08"
+        ixz="-3.5723961E-07"
+        iyy="1.7613940E-06"
+        iyz="-4.6665868E-09"
+        izz="1.7160919E-06" />
     </inertial>
     <visual>
       <origin
@@ -519,33 +519,33 @@
     </collision>
   </link>
   <joint
-    name="mf_distal_link"
+    name="r_mf_distal_link"
     type="continuous">
     <origin
       xyz="-0.040851 -0.00054126 -0.0035364"
       rpy="0 0 0" />
     <parent
-      link="mf_proximal_link" />
+      link="r_mf_proximal_link" />
     <child
-      link="mf_distal_link" />
+      link="r_mf_distal_link" />
     <axis
       xyz="-0.013244 0.99991 -2.1055E-05" />
   </joint>
   <link
-    name="mf_connecting_link">
+    name="r_mf_connecting_link">
     <inertial>
       <origin
         xyz="-0.0172404027176054 -0.00302882403489448 -0.00839495079986684"
         rpy="0 0 0" />
       <mass
-        value="0.000216186298115104" />
+        value="0.0012" />
       <inertia
-        ixx="5.71911032121687E-09"
-        ixy="-4.34635722671368E-10"
-        ixz="-1.31282576362091E-08"
-        iyy="3.85062669375328E-08"
-        iyz="-1.74010213990928E-10"
-        izz="3.28217382655966E-08" />
+        ixx="3.1745455E-08"
+        ixy="-2.4125621E-09"
+        ixz="-7.2871914E-08"
+        iyy="2.1373936E-07"
+        iyz="-9.6589034E-10"
+        izz="1.8218586E-07" />
     </inertial>
     <visual>
       <origin
@@ -572,33 +572,33 @@
     </collision>
   </link>
   <joint
-    name="mf_connecting_link"
+    name="r_mf_connecting_link"
     type="continuous">
     <origin
       xyz="-0.12342 -0.0078912 0.011366"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="mf_connecting_link" />
+      link="r_mf_connecting_link" />
     <axis
       xyz="-0.013244 0.99991 -2.1054E-05" />
   </joint>
   <link
-    name="rf_slider_link">
+    name="r_rf_slider_link">
     <inertial>
       <origin
         xyz="-0.0138577276275272 0.000783291982999354 -2.57947158771588E-09"
         rpy="0 0 0" />
       <mass
-        value="0.000489138255422532" />
+        value="0.0032" />
       <inertia
-        ixx="4.4801306165684E-09"
-        ixy="1.93332298746995E-09"
-        ixz="-1.34549090986576E-11"
-        iyy="3.83509471510986E-08"
-        iyz="7.58561752901306E-13"
-        izz="3.92778831148437E-08" />
+        ixx="2.930954E-08"
+        ixy="1.264803E-08"
+        ixz="-8.802360E-11"
+        iyy="2.508964E-07"
+        iyz="4.962600E-12"
+        izz="2.569605E-07" />
     </inertial>
     <visual>
       <origin
@@ -625,15 +625,15 @@
     </collision>
   </link>
   <joint
-    name="rf_slider_link"
+    name="r_rf_slider_link"
     type="prismatic">
     <origin
       xyz="-0.074498 0.0072492 -0.0023801"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="rf_slider_link" />
+      link="r_rf_slider_link" />
     <axis
       xyz="0.9984 -0.056554 9.5082E-05" />
     <limit
@@ -643,20 +643,20 @@
       velocity="0" />
   </joint>
   <link
-    name="rf_slider_abpart_link">
+    name="r_rf_slider_abpart_link">
     <inertial>
       <origin
         xyz="-0.0100460782718657 -0.00293580717799607 -0.000398409844149738"
         rpy="0 0 0" />
       <mass
-        value="0.000526636350514617" />
+        value="0.00174" />
       <inertia
-        ixx="2.03917187638513E-09"
-        ixy="2.11241960983381E-10"
-        ixz="-7.39578422790513E-10"
-        iyy="5.75480358477282E-09"
-        iyz="4.18225341671665E-11"
-        izz="6.45435515888634E-09" />
+        ixx="6.73740E-09"
+        ixy="6.97941E-10"
+        ixz="-2.443558E-09"
+        iyy="1.901380E-08"
+        iyz="1.381811E-10"
+        izz="2.132511E-08" />
     </inertial>
     <visual>
       <origin
@@ -683,33 +683,33 @@
     </collision>
   </link>
   <joint
-    name="rf_slider_abpart_link"
+    name="r_rf_slider_abpart_link"
     type="continuous">
     <origin
       xyz="-0.028756 0.0051336 0"
       rpy="0 0 0" />
     <parent
-      link="rf_slider_link" />
+      link="r_rf_slider_link" />
     <child
-      link="rf_slider_abpart_link" />
+      link="r_rf_slider_abpart_link" />
     <axis
       xyz="0.056554 0.9984 7.942E-05" />
   </joint>
   <link
-    name="rf_proximal_link">
+    name="r_rf_proximal_link">
     <inertial>
       <origin
         xyz="-0.0177310287909376 -0.00550519929476113 -0.00333587081746279"
         rpy="0 0 0" />
       <mass
-        value="0.0015495346822944" />
+        value="0.00969" />
       <inertia
-        ixx="6.1627993173526E-08"
-        ixy="5.28043591321876E-09"
-        ixz="-1.35824301643415E-09"
-        iyy="1.54490462686207E-07"
-        iyz="8.36929214668239E-11"
-        izz="1.69619189994361E-07" />
+        ixx="3.85390E-07"
+        ixy="3.30212E-08"
+        ixz="-8.49376E-09"
+        iyy="9.66105E-07"
+        iyz="5.23373E-10"
+        izz="1.06071E-06" />
     </inertial>
     <visual>
       <origin
@@ -736,33 +736,33 @@
     </collision>
   </link>
   <joint
-    name="rf_proximal_link"
+    name="r_rf_proximal_link"
     type="continuous">
     <origin
       xyz="-0.11287 0.015935 0.0062161"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="rf_proximal_link" />
+      link="r_rf_proximal_link" />
     <axis
       xyz="0.05658 0.9984 -2.102E-05" />
   </joint>
   <link
-    name="rf_distal_link">
+    name="r_rf_distal_link">
     <inertial>
       <origin
         xyz="-0.0205452704454659 -0.00536749629258281 -0.00756097673363692"
         rpy="0 0 0" />
       <mass
-        value="0.00486607601001256" />
+        value="0.01355" />
       <inertia
-        ixx="1.24271987974525E-07"
-        ixy="2.48401012771062E-08"
-        ixz="-1.41965837565003E-07"
-        iyy="5.59956587625226E-07"
-        iyz="8.06905373260045E-09"
-        izz="5.29737231583633E-07" />
+        ixx="3.46046E-07"
+        ixy="6.91694E-08"
+        ixz="-3.95316E-07"
+        iyy="1.55925E-06"
+        iyz="2.24690E-08"
+        izz="1.47510E-06" />
     </inertial>
     <visual>
       <origin
@@ -789,33 +789,33 @@
     </collision>
   </link>
   <joint
-    name="rf_distal_link"
+    name="r_rf_distal_link"
     type="continuous">
     <origin
       xyz="-0.035766 0.0020268 -0.0026198"
       rpy="0 0 0" />
     <parent
-      link="rf_proximal_link" />
+      link="r_rf_proximal_link" />
     <child
-      link="rf_distal_link" />
+      link="r_rf_distal_link" />
     <axis
       xyz="0.05658 0.9984 -2.102E-05" />
   </joint>
   <link
-    name="rf_connecting_link">
+    name="r_rf_connecting_link">
     <inertial>
       <origin
         xyz="-0.0149581978586362 -0.00195701448922151 -0.00799324332753841"
         rpy="0 0 0" />
       <mass
-        value="0.000197689252304948" />
+        value="0.0012" />
       <inertia
-        ixx="4.92836846137584E-09"
-        ixy="1.25465287447078E-09"
-        ixz="-9.87167520544273E-09"
-        iyy="2.70003622691774E-08"
-        iyz="5.59331393640482E-10"
-        izz="2.22352610693874E-08" />
+        ixx="2.99159E-08"
+        ixy="7.61591E-09"
+        ixz="-5.99224E-08"
+        iyy="1.63896E-07"
+        iyz="3.39522E-09"
+        izz="1.34971E-07" />
     </inertial>
     <visual>
       <origin
@@ -842,33 +842,33 @@
     </collision>
   </link>
   <joint
-    name="rf_connecting_link"
+    name="r_rf_connecting_link"
     type="continuous">
     <origin
       xyz="-0.1204851022382 0.0126604995038233 0.0106153804877178"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="rf_connecting_link" />
+      link="r_rf_connecting_link" />
     <axis
       xyz="0.0565797489260885 0.99839808271532 -2.10198201110756E-05" />
   </joint>
   <link
-    name="lf_slider_link">
+    name="r_lf_slider_link">
     <inertial>
       <origin
         xyz="-0.0137830050652566 0.00163673819958291 3.10002635612108E-07"
         rpy="0 0 0" />
       <mass
-        value="0.000489138222296884" />
+        value="0.0032" />
       <inertia
-        ixx="4.84694102463702E-09"
-        ixy="4.00378603315495E-09"
-        ixz="-5.27247404385965E-12"
-        iyy="3.79903471786704E-08"
-        iyz="7.21125885153376E-11"
-        izz="3.92716625459811E-08" />
+        ixx="3.17093E-08"
+        ixy="2.61932E-08"
+        ixz="-3.44931E-11"
+        iyy="2.48537E-07"
+        iyz="4.71769E-10"
+        izz="2.56920E-07" />
     </inertial>
     <visual>
       <origin
@@ -895,15 +895,15 @@
     </collision>
   </link>
   <joint
-    name="lf_slider_link"
+    name="r_lf_slider_link"
     type="prismatic">
     <origin
       xyz="-0.0708466334619896 0.0241824111749996 -0.00489967270216645"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="lf_slider_link" />
+      link="r_lf_slider_link" />
     <axis
       xyz="0.993009723934899 -0.118032543523823 8.27044911595336E-05" />
     <limit
@@ -913,20 +913,20 @@
       velocity="0" />
   </joint>
   <link
-    name="lf_slider_abpart_link">
+    name="r_lf_slider_abpart_link">
     <inertial>
       <origin
         xyz="-0.0102063555652567 -0.00234259650590587 -0.000209525841910842"
         rpy="0 0 0" />
       <mass
-        value="0.000526636335571007" />
+        value="0.00174" />
       <inertia
-        ixx="2.08132552306167E-09"
-        ixy="3.69565387537111E-10"
-        ixz="-7.78261185028171E-10"
-        iyy="5.73614117437819E-09"
-        iyz="1.51002988209835E-10"
-        izz="6.43086320825401E-09" />
+        ixx="6.87667E-09"
+        ixy="1.22104E-09"
+        ixz="-2.57137E-09"
+        iyy="1.89521E-08"
+        iyz="4.98912E-10"
+        izz="2.12475E-08" />
     </inertial>
     <visual>
       <origin
@@ -953,33 +953,33 @@
     </collision>
   </link>
   <joint
-    name="lf_slider_abpart_link"
+    name="r_lf_slider_abpart_link"
     type="continuous">
     <origin
       xyz="-0.0283858043783233 0.00688449840682251 -0.000306788289491815"
       rpy="0 0 0" />
     <parent
-      link="lf_slider_link" />
+      link="r_lf_slider_link" />
     <child
-      link="lf_slider_abpart_link" />
+      link="r_lf_slider_abpart_link" />
     <axis
       xyz="0.117590610595967 0.989230669602698 -0.0871500465694956" />
   </joint>
   <link
-    name="lf_proximal_link">
+    name="r_lf_proximal_link">
     <inertial>
       <origin
         xyz="-0.0162288997665586 -0.00489295515461147 -0.00285461884567003"
         rpy="0 0 0" />
       <mass
-        value="0.00136677973237" />
+        value="0.00795" />
       <inertia
-        ixx="5.65577187001445E-08"
-        ixy="6.43606986195803E-09"
-        ixz="-2.86666526076883E-09"
-        iyy="1.12197398928047E-07"
-        iyz="1.61247214480287E-09"
-        izz="1.27256606416047E-07" />
+        ixx="3.28973E-07"
+        ixy="3.74360E-08"
+        ixz="-1.66742E-08"
+        iyy="6.52606E-07"
+        iyz="9.37909E-09"
+        izz="7.40200E-07" />
     </inertial>
     <visual>
       <origin
@@ -1006,33 +1006,33 @@
     </collision>
   </link>
   <joint
-    name="lf_proximal_link"
+    name="r_lf_proximal_link"
     type="continuous">
     <origin
       xyz="-0.10871130258864 0.0359583660197833 0.00309824490260681"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="lf_proximal_link" />
+      link="r_lf_proximal_link" />
     <axis
       xyz="0.117591058209323 0.989234457465869 -0.0871064359930968" />
   </joint>
   <link
-    name="lf_distal_link">
+    name="r_lf_distal_link">
     <inertial>
       <origin
         xyz="-0.0131613846630599 -0.00544871200568296 -0.00463526283326208"
         rpy="0 0 0" />
       <mass
-        value="0.00326999621591245" />
+        value="0.01073" />
       <inertia
-        ixx="5.95701111045849E-08"
-        ixy="7.82239562000353E-09"
-        ixz="-3.78877982628279E-08"
-        iyy="1.53009904450743E-07"
-        iyz="4.48079481900786E-09"
-        izz="1.53335411327093E-07" />
+        ixx="1.95470E-07"
+        ixy="2.56680E-08"
+        ixz="-1.24323E-07"
+        iyy="5.02079E-07"
+        iyz="1.47031E-08"
+        izz="5.03147E-07" />
     </inertial>
     <visual>
       <origin
@@ -1059,33 +1059,33 @@
     </collision>
   </link>
   <joint
-    name="lf_distal_link"
+    name="r_lf_distal_link"
     type="continuous">
     <origin
       xyz="-0.031562 0.0034532 -0.003392"
       rpy="0 0 0" />
     <parent
-      link="lf_proximal_link" />
+      link="r_lf_proximal_link" />
     <child
-      link="lf_distal_link" />
+      link="r_lf_distal_link" />
     <axis
       xyz="0.11759 0.98923 -0.087106" />
   </joint>
   <link
-    name="lf_connecting_link">
+    name="r_lf_connecting_link">
     <inertial>
       <origin
         xyz="-0.0129208949539236 -0.00198480160598055 -0.00783823800520824"
         rpy="0 0 0" />
       <mass
-        value="0.000176981602686642" />
+        value="0.0012" />
       <inertia
-        ixx="4.93706907107081E-09"
-        ixy="1.08018685509757E-09"
-        ixz="-8.19111708831926E-09"
-        iyy="2.00115909902661E-08"
-        iyz="5.47675927664685E-10"
-        izz="1.52537546369551E-08" />
+        ixx="3.34751E-08"
+        ixy="7.32406E-09"
+        ixz="-5.55388E-08"
+        iyy="1.35686E-07"
+        iyz="3.71344E-09"
+        izz="1.03426E-07" />
     </inertial>
     <visual>
       <origin
@@ -1112,33 +1112,33 @@
     </collision>
   </link>
   <joint
-    name="lf_connecting_link"
+    name="r_lf_connecting_link"
     type="continuous">
     <origin
       xyz="-0.11647 0.033555 0.0078033"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="lf_connecting_link" />
+      link="r_lf_connecting_link" />
     <axis
       xyz="0.11759 0.98924 -0.087085" />
   </joint>
   <link
-    name="th_root_link">
+    name="r_th_root_link">
     <inertial>
       <origin
         xyz="-0.0182056024312271 -0.00620278411274924 -0.00602504863372063"
         rpy="0 0 0" />
       <mass
-        value="0.00217782328356739" />
+        value="0.01836" />
       <inertia
-        ixx="1.92048481479894E-07"
-        ixy="-8.02008675069051E-08"
-        ixz="-1.58292104587684E-08"
-        iyy="1.97385228513266E-07"
-        iyz="-2.84372060188982E-08"
-        izz="2.25370032308905E-07" />
+        ixx="1.61905E-06"
+        ixy="-6.76128E-07"
+        ixz="-1.33447E-07"
+        iyy="1.66404E-06"
+        iyz="-2.39738E-07"
+        izz="1.89997E-06" />
     </inertial>
     <visual>
       <origin
@@ -1165,15 +1165,15 @@
     </collision>
   </link>
   <joint
-    name="th_root_link"
+    name="r_th_root_link"
     type="revolute">
     <origin
       xyz="-0.024656 -0.019554 -0.018266"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="r_base_link" />
     <child
-      link="th_root_link" />
+      link="r_th_root_link" />
     <axis
       xyz="0.97616 0.01293 0.21667" />
     <limit
@@ -1183,20 +1183,20 @@
       velocity="0" />
   </joint>
   <link
-    name="th_proximal_link">
+    name="r_th_proximal_link">
     <inertial>
       <origin
         xyz="-0.0184116092810015 -0.0115354100517607 0.00417628792862241"
         rpy="0 0 0" />
       <mass
-        value="0.00501307756145889" />
+        value="0.01364" />
       <inertia
-        ixx="7.32552864862064E-07"
-        ixy="-6.67933190699978E-07"
-        ixz="-2.77355271268145E-07"
-        iyy="1.50720254529732E-06"
-        iyz="-1.29786986672997E-07"
-        izz="2.02068566316036E-06" />
+        ixx="1.99319E-06"
+        ixy="-1.81737E-06"
+        ixz="-7.54651E-07"
+        iyy="4.10092E-06"
+        iyz="-3.53135E-07"
+        izz="5.49805E-06" />
     </inertial>
     <visual>
       <origin
@@ -1223,33 +1223,33 @@
     </collision>
   </link>
   <joint
-    name="th_proximal_link"
+    name="r_th_proximal_link"
     type="continuous">
     <origin
       xyz="-0.025097 -0.021667 -0.015581"
       rpy="0 0 0" />
     <parent
-      link="th_root_link" />
+      link="r_th_root_link" />
     <child
-      link="th_proximal_link" />
+      link="r_th_proximal_link" />
     <axis
       xyz="-0.21699 -0.032029 0.97565" />
   </joint>
   <link
-    name="th_slider_link">
+    name="r_th_slider_link">
     <inertial>
       <origin
         xyz="-0.00851609590265527 -0.00542248522665952 -0.00171626270578038"
         rpy="0 0 0" />
       <mass
-        value="0.000966927715708797" />
+        value="0.00396" />
       <inertia
-        ixx="4.78157132134601E-08"
-        ixy="-2.60371829130736E-08"
-        ixz="-1.95870059545572E-09"
-        iyy="5.57310162346669E-08"
-        iyz="-5.63523062150475E-09"
-        izz="6.02181085440815E-08" />
+        ixx="1.95827E-07"
+        ixy="-1.06634E-07"
+        ixz="-8.02175E-09"
+        iyy="2.28243E-07"
+        iyz="-2.30788E-08"
+        izz="2.46620E-07" />
     </inertial>
     <visual>
       <origin
@@ -1276,15 +1276,15 @@
     </collision>
   </link>
   <joint
-    name="th_slider_link"
+    name="r_th_slider_link"
     type="prismatic">
     <origin
       xyz="-0.0053401 -0.0053494 0.0068801"
       rpy="0 0 0" />
     <parent
-      link="th_proximal_link" />
+      link="r_th_proximal_link" />
     <child
-      link="th_slider_link" />
+      link="r_th_slider_link" />
     <axis
       xyz="-0.76198 -0.63028 -0.14877" />
     <limit
@@ -1294,20 +1294,20 @@
       velocity="0" />
   </joint>
   <link
-    name="th_connecting_link">
+    name="r_th_connecting_link">
     <inertial>
       <origin
         xyz="-0.00136684006934208 -0.00145247600958444 -0.00439754221886702"
         rpy="0 0 0" />
       <mass
-        value="0.000607798102631607" />
+        value="0.00067" />
       <inertia
-        ixx="4.70576711466197E-09"
-        ixy="-1.33681610352704E-09"
-        ixz="-8.45531416476559E-11"
-        iyy="6.82689720568738E-09"
-        iyz="-3.48022069928473E-10"
-        izz="5.2757667153237E-09" />
+        ixx="5.18735E-09"
+        ixy="-1.47363E-09"
+        ixz="-9.32063E-11"
+        iyy="7.52556E-09"
+        iyz="-3.83639E-10"
+        izz="5.81569E-09" />
     </inertial>
     <visual>
       <origin
@@ -1334,33 +1334,33 @@
     </collision>
   </link>
   <joint
-    name="th_connecting_link"
+    name="r_th_connecting_link"
     type="continuous">
     <origin
       xyz="-0.026144 -0.020984 -0.0010258"
       rpy="0 0 0" />
     <parent
-      link="th_slider_link" />
+      link="r_th_slider_link" />
     <child
-      link="th_connecting_link" />
+      link="r_th_connecting_link" />
     <axis
       xyz="-0.21699 0.032029 0.97565" />
   </joint>
   <link
-    name="th_distal_link">
+    name="r_th_distal_link">
     <inertial>
       <origin
         xyz="-0.000439994899924894 -0.0101522919044099 -0.0069088261128312"
         rpy="0 0 0" />
       <mass
-        value="0.00601772502419511" />
+        value="0.00787" />
       <inertia
-        ixx="2.88077211935751E-07"
-        ixy="-5.85470950376845E-08"
-        ixz="1.21533994284891E-08"
-        iyy="2.18588933453259E-07"
-        iyz="-1.22530053465934E-08"
-        izz="2.45149442778336E-07" />
+        ixx="3.76748E-07"
+        ixy="-7.65681E-08"
+        ixz="1.58943E-08"
+        iyy="2.85871E-07"
+        iyz="-1.60245E-08"
+        izz="3.20607E-07" />
     </inertial>
     <visual>
       <origin
@@ -1387,15 +1387,15 @@
     </collision>
   </link>
   <joint
-    name="th_distal_link"
+    name="r_th_distal_link"
     type="continuous">
     <origin
       xyz="-0.049076 -0.023254 0.004868"
       rpy="0 0 0" />
     <parent
-      link="th_proximal_link" />
+      link="r_th_proximal_link" />
     <child
-      link="th_distal_link" />
+      link="r_th_distal_link" />
     <axis
       xyz="-0.21698 0.032029 0.97565" />
   </joint>
