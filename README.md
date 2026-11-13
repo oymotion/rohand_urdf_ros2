@@ -22,12 +22,12 @@ source install/setup.bash
 
 | Topic             | Description                                                               |
 | ----------------- | ------------------------------------------------------------------------- |
-| "if_slider_joint" | slider for index finger, control index finger by changing it's position   |
-| "mf_slider_joint" | slider for middle finger, control middle finger by changing it's position |
-| "rf_slider_joint" | slider for ring finger, control ring finger by changing it's position     |
-| "lf_slider_joint" | slider for little finger, control little finger by changing it's position |
-| "th_slider_joint" | slider for thumb, control thumb by changing it's position                 |
-| "th_root_joint"   | slider for thumb root, control thumb root by changing it's position       |
+| "if_slider_link" | slider for index finger, control index finger by changing it's position   |
+| "mf_slider_link" | slider for middle finger, control middle finger by changing it's position |
+| "rf_slider_link" | slider for ring finger, control ring finger by changing it's position     |
+| "lf_slider_link" | slider for little finger, control little finger by changing it's position |
+| "th_slider_link" | slider for thumb, control thumb by changing it's position                 |
+| "th_root_link"   | slider for thumb root, control thumb root by changing it's position       |
 
 ## 4.RUN
 
